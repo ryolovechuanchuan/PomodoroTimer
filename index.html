@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <audio id="alarmSound" src="./ding.mp3"></audio>
+    <h1 id="display">工作時間</h1>
+
+    <h1 id="timer">25:00</h1>
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+        <span id="progress-text">100%</span>
+    </div>
+
+    <p id="count">完成番茄鐘：0 / 4</p>
+    <div class="btn-container">
+        <button id="startBtn">開始</button>
+        <button id="pauseBtn">暫停</button>
+        <button id="resetBtn">重置</button>
+        <button id="themeBtn">🌙 深色模式</button>
+    </div>
+    <script defer src="./script.js"></script>
+</body>
+</html>
