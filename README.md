@@ -136,17 +136,19 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 
 ## 專案結構
 
+```text
 Pomodoro-Timer
 │
 ├── images
-│ ├── light-mode.png
-│ ├── dark-mode.png
-│ └── mobile.png
+│   ├── light-mode.png
+│   ├── dark-mode.png
+│   └── mobile.png
+├── ding.mp3
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-
+```
 ---
 
 ## Future Improvements
