@@ -186,5 +186,5 @@ JavaScriptの状態管理、DOM操作、
 ### Chih-Wen Cheng
 
 - GitHub:https://github.com/ryolovechuanchuan
-- Portfolio:https://github.com/ryolovechuanchuan/frontend-portfolio
+- Portfolio:
 - LinkedIn:https://www.linkedin.com/in/chih-wen-cheng-28b6b3418/
