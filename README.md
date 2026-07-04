@@ -56,6 +56,10 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 
 ![Mobile](./images/mobile.png)
 
+## 🚀 Live Demo
+
+https://pomodoro-timer-ryolovechuanchuan.netlify.app/
+
 ---
 
 # 🇯🇵 日本語
@@ -182,5 +186,5 @@ JavaScriptの状態管理、DOM操作、
 ### Chih-Wen Cheng
 
 - GitHub:https://github.com/ryolovechuanchuan
-- Portfolio:https://github.com/ryolovechuanchuan/frontend-portfolio
+- Portfolio:
 - LinkedIn:https://www.linkedin.com/in/chih-wen-cheng-28b6b3418/
