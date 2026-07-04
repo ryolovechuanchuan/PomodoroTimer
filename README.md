@@ -58,7 +58,7 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-[https://pomodoro-timer-ryolovechuanchuan.netlify.app/](https://ryolovechuanchuan.github.io/PomodoroTimer/](https://ryolovechuanchuan.github.io/PomodoroTimer/)
+https://ryolovechuanchuan.github.io/PomodoroTimer/
 
 ---
 
