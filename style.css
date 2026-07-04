@@ -6,20 +6,21 @@
 }
 
 body {
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   color: #333;
 }
 
+/* -------------------------------- Dark Mode ------------------------------- */
 body.dark {
   background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
 }
 
-body.dark #timer{
+body.dark #timer {
   background: #0917a6;
   color: white;
 }
@@ -34,6 +35,7 @@ body.dark button {
   color: white;
 }
 
+/* ------------------------------ Timer Display ----------------------------- */
 #display {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -42,25 +44,27 @@ body.dark button {
 }
 
 #timer {
-  font-size: 5rem;
-  background: rgba(255, 255, 255, 0.9);
   width: 350px;
-  text-align: center;
   padding: 30px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-
-  margin-bottom: 20px;
+  font-size: 5rem;
+  text-align: center;
 }
+
+
+ /* ------------------------------ Progress Bar ------------------------------ */
 
 .progress-container {
   position: relative;
   width: 350px;
   height: 18px;
+  margin-bottom: 30px;
   background: #ddd;
   border-radius: 20px;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 
 #progress-bar {
@@ -76,42 +80,47 @@ body.dark button {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   font-size: 0.75rem;
   font-weight: bold;
-  color: white;
 }
+
 #count {
-  font-size: 1.2rem;
-  color: white;
   margin-bottom: 40px;
+  color: white;
+  font-size: 1.2rem;
 }
 
 
+/* --------------------------------- Buttons -------------------------------- */
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 15px;
+  justify-content: center;
+}
 
 button {
-  border: none;
-  padding: 15px 30px;
   width: 120px;
-  font-weight:bold;
   margin: 0 10px;
-  font-size: 1rem;
+  padding: 15px 30px;
+  border: none;
   border-radius: 15px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
   transition: all 0.3s;
 }
-
 
 #startBtn {
   background: #4caf50;
   color: white;
 }
 
-
 #pauseBtn {
   background: #ff9800;
   color: white;
 }
-
 
 #resetBtn {
   background: #f44336;
@@ -127,32 +136,25 @@ button:active {
   transform: scale(0.95);
 }
 
-.btn-container {
-  display: grid;
-  grid-template-columns: repeat(4, 120px);
-  gap: 15px;
-  justify-content: center;
-}
 
-
+/* ---------------------------- Responsive Design --------------------------- */
 @media (max-width: 900px) {
-    button {
-        border: none;
-        padding: 15px 30px;
-        width: 100%;
-        font-weight:bold;
-        margin: 0 10px;
-        font-size: 1rem;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
+  button {
+    width: 100%;
+    margin: 0 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
 
   .btn-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 @media (max-width: 480px) {
   body {
@@ -166,13 +168,13 @@ button:active {
   #timer {
     width: 100%;
     max-width: 320px;
-    font-size: 4rem;
     padding: 25px 15px;
+    font-size: 4rem;
   }
 
   #count {
-    font-size: 1rem;
     margin-bottom: 25px;
+    font-size: 1rem;
   }
 
   .progress-container {
@@ -191,6 +193,3 @@ button:active {
     margin: 0;
   }
 }
-
-
-

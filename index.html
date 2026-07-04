@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Pomodoro Timer</title>
-</head>
-<body>
+  </head>
+
+  <body>
+    <!-- ---------------------------- 音效：時間結束時播放提示音 ---------------------------- -->
     <audio id="alarmSound" src="./ding.mp3"></audio>
+
+    <!-- ------------------------------- 番茄鐘狀態顯示 ------------------------------- -->
     <h1 id="display">工作時間</h1>
 
+    <!-- ------------------------------- 倒數計時顯示 -------------------------------- -->
     <h1 id="timer">25:00</h1>
 
+    <!-- -------------------------------- 進度條區塊 -------------------------------- -->
     <div class="progress-container">
-        <div id="progress-bar"></div>
-        <span id="progress-text">100%</span>
+      <div id="progress-bar"></div>
+      <span id="progress-text">100%</span>
     </div>
 
+    <!-- ------------------------------- 完成次數顯示 -------------------------------- -->
     <p id="count">完成番茄鐘：0 / 4</p>
+
+    <!-- -------------------------------- 操作按鈕 --------------------------------- -->
     <div class="btn-container">
-        <button id="startBtn">開始</button>
-        <button id="pauseBtn">暫停</button>
-        <button id="resetBtn">重置</button>
-        <button id="themeBtn">🌙 深色模式</button>
+      <button id="startBtn">開始</button>
+      <button id="pauseBtn">暫停</button>
+      <button id="resetBtn">重置</button>
+      <button id="themeBtn">🌙 深色模式</button>
     </div>
+
     <script defer src="./script.js"></script>
-</body>
+  </body>
 </html>
