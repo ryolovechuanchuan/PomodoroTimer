@@ -58,7 +58,7 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 
 ## 🚀 Live Demo
 
-https://pomodoro-timer-ryolovechuanchuan.netlify.app/
+https://ryolovechuanchuan.github.io/PomodoroTimer/
 
 ---
 
@@ -141,17 +141,15 @@ https://pomodoro-timer-ryolovechuanchuan.netlify.app/
 ## 專案結構
 
 ```text
-Pomodoro-Timer
-│
-├── images
-│   ├── light-mode.png
-│   ├── dark-mode.png
-│   └── mobile.png
-├── ding.mp3
+PomodoroTimer_split
 ├── index.html
 ├── style.css
-├── script.js
-└── README.md
+└── js
+    ├── dom.js
+    ├── main.js
+    ├── sound.js
+    ├── theme.js
+    └── timer.js
 ```
 ---
 
