@@ -141,17 +141,15 @@ https://ryolovechuanchuan.github.io/PomodoroTimer/
 ## 專案結構
 
 ```text
-Pomodoro-Timer
-│
-├── images
-│   ├── light-mode.png
-│   ├── dark-mode.png
-│   └── mobile.png
-├── ding.mp3
+PomodoroTimer_split
 ├── index.html
 ├── style.css
-├── script.js
-└── README.md
+└── js
+    ├── dom.js
+    ├── main.js
+    ├── sound.js
+    ├── theme.js
+    └── timer.js
 ```
 ---
 
