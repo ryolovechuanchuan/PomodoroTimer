@@ -1,39 +1,21 @@
-/* ------------------------------ DOM Elements ------------------------------ */
-const display = document.getElementById("display");
-const timer = document.getElementById("timer");
-const count = document.getElementById("count");
-const progressBar = document.getElementById("progress-bar");
-const progressText = document.getElementById("progress-text");
-const themeBtn = document.getElementById("themeBtn");
-const alarmSound = document.getElementById("alarmSound");
-
-const startBtn = document.getElementById("startBtn");
-const pauseBtn = document.getElementById("pauseBtn");
-const resetBtn = document.getElementById("resetBtn");
-
 /* ------------------------------- Timer State ------------------------------ */
+import {display,timer,count,progressBar,progressText,} from "./dom.js";
+import { playAlarm } from "./sound.js";
+
 let minute = 25;
 let second = 0;
 let totalSeconds = 1500;
 let currentSeconds = minute * 60 + second;
 let percent = (currentSeconds / 1500) * 100;
 
-progressBar.style.width = `${percent}%`;
-
 let isWorking = true;
 let pomodoroCount = 0;
 let interval = null;
 
-/* ---------------------------------- Sound --------------------------------- */
-function playAlarm() {
-  // 每次播放前先歸零，避免音效重複播放時沒有從頭開始
-  alarmSound.currentTime = 0;
-  alarmSound.play();
-}
-
+progressBar.style.width = `${percent}%`;
 
 /* -------------------------------- Render UI ------------------------------- */
-function renderTime() {
+export function renderTime() {
   // 將數字補成兩位數，例如 5 會顯示為 05
   const displayMinute = String(minute).padStart(2, "0");
   const displaySecond = String(second).padStart(2, "0");
@@ -47,13 +29,10 @@ function renderTime() {
 
   progressBar.style.width = `${percent}%`;
   progressText.innerText = `${Math.round(percent)}%`;
-
-  progressBar.style.width = `${percent}%`;
 }
 
-
 /* ----------------------------- Timer Controls ----------------------------- */
-function startTimer() {
+export function startTimer() {
   // 避免重複點擊開始後產生多個計時器
   clearInterval(interval);
   interval = null;
@@ -73,6 +52,25 @@ function startTimer() {
 
     renderTime();
   }, 1000);
+}
+
+export function pauseTimer() {
+  clearInterval(interval);
+  interval = null;
+}
+
+export function resetTimer() {
+  clearInterval(interval);
+  interval = null;
+
+  minute = 25;
+  second = 0;
+  isWorking = true;
+  pomodoroCount = 0;
+
+  display.innerText = "工作時間";
+
+  renderTime();
 }
 
 /* ------------------------------- Mode Change ------------------------------ */
@@ -117,36 +115,3 @@ function startWork() {
   display.innerText = "工作時間";
   display.style.background = "#4caf50";
 }
-
-
-/* --------------------------- Button Click Event --------------------------- */
-startBtn.addEventListener("click", startTimer);
-
-pauseBtn.addEventListener("click", function () {
-  clearInterval(interval);
-  interval = null;
-});
-
-resetBtn.addEventListener("click", function () {
-  clearInterval(interval);
-  interval = null;
-
-  minute = 25;
-  second = 0;
-  isWorking = true;
-  pomodoroCount = 0;
-
-  display.innerText = "工作時間";
-
-  renderTime();
-});
-
-themeBtn.addEventListener("click", function () {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    themeBtn.innerText = "☀️ 淺色模式";
-  } else {
-    themeBtn.innerText = "🌙 深色模式";
-  }
-});
