@@ -11,6 +11,7 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 - ✅ 25-minute work timer
 - ✅ 5-minute short break
 - ✅ 20-minute long break
+- ✅ Automatically switches to a 20-minute long break after every four completed Pomodoro sessions.
 - ✅ Progress bar with percentage
 - ✅ Dark mode
 - ✅ Sound notification
@@ -39,6 +40,22 @@ A simple and responsive Pomodoro Timer built with HTML, CSS, and JavaScript.
 - Progress Bar Calculation
 - Dark Mode Implementation
 - Audio API
+
+
+## Why I Built This Project
+
+I built this project to practice JavaScript state management,
+DOM manipulation, and responsive design while creating a useful productivity tool.
+
+---
+
+## Future Improvements
+
+- Save settings with localStorage
+- Custom work/break time
+- Daily statistics
+- Chart.js dashboard
+- PWA support
 
 ---
 
@@ -69,6 +86,7 @@ https://ryolovechuanchuan.github.io/PomodoroTimer/
 - ✅ 25分の作業タイマー
 - ✅ 5分の短い休憩
 - ✅ 20分の長い休憩
+- ✅ 4回のポモドーロ完了後、自動的に20分間の長い休憩へ切り替えます。
 - ✅ 進捗バー（％表示）
 - ✅ ダークモード
 - ✅ 通知音
@@ -100,6 +118,15 @@ https://ryolovechuanchuan.github.io/PomodoroTimer/
 
 ---
 
+## このプロジェクトを制作した理由
+
+このプロジェクトでは、
+JavaScriptの状態管理、DOM操作、
+レスポンシブデザインを実践しながら、
+実用的な生産性ツールを作成しました。
+
+---
+
 # 🇹🇼 中文
 
 ## 功能
@@ -107,6 +134,7 @@ https://ryolovechuanchuan.github.io/PomodoroTimer/
 - ✅ 25 分鐘工作模式
 - ✅ 5 分鐘短休息
 - ✅ 20 分鐘長休息
+- ✅ 每完成四次番茄鐘後，自動切換為20分鐘的長休息模式。
 - ✅ 進度條與百分比
 - ✅ 深色模式
 - ✅ 音效提醒
@@ -151,32 +179,6 @@ PomodoroTimer_split
     ├── theme.js
     └── timer.js
 ```
----
-
-## Future Improvements
-
-- ✅ Automatically switches to a 20-minute long break after every four completed Pomodoro sessions.
-- ✅ 4回のポモドーロ完了後、自動的に20分間の長い休憩へ切り替えます。
-- ✅ 每完成四次番茄鐘後，自動切換為20分鐘的長休息模式。
-
-- Save settings with localStorage
-- Custom work/break time
-- Daily statistics
-- Chart.js dashboard
-- PWA support
-
----
-
-## Why I Built This Project
-
-I built this project to practice JavaScript state management,
-DOM manipulation, and responsive design while creating a useful productivity tool.
-
-このプロジェクトでは、
-JavaScriptの状態管理、DOM操作、
-レスポンシブデザインを実践しながら、
-実用的な生産性ツールを作成しました。
-
 ---
 
 ## Author
